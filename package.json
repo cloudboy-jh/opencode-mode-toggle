@@ -1,0 +1,52 @@
+{
+  "name": "opencode-model-toggle",
+  "version": "1.0.0",
+  "description": "Quick model switching for OpenCode via editor hotkeys",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node --format esm",
+    "dev": "bun build src/index.ts --outdir dist --target node --format esm --watch",
+    "dev:test": "bun run build && node scripts/dev-test.mjs",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "model-toggle",
+    "ai",
+    "llm",
+    "claude",
+    "gemini",
+    "hotkey"
+  ],
+  "author": "cloudboy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudboy-jh/opencode-mode-toggle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cloudboy-jh/opencode-mode-toggle/issues"
+  },
+  "homepage": "https://github.com/cloudboy-jh/opencode-mode-toggle#readme",
+  "peerDependencies": {
+    "@opencode-ai/plugin": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@opencode-ai/plugin": "^1.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

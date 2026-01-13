@@ -1,0 +1,22 @@
+[
+  {
+    "key": "cmd+shift+m",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": { "text": "opencode run '/m'\n" }
+  },
+  {
+    "key": "cmd+shift+1",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": { "text": "opencode run '/model-toggle set 1'\n" }
+  },
+  {
+    "key": "cmd+shift+2",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": { "text": "opencode run '/model-toggle set 2'\n" }
+  },
+  {
+    "key": "cmd+shift+3",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": { "text": "opencode run '/model-toggle set 3'\n" }
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "bindings": {
+    "cmd+shift+m": ["task::Spawn", {
+      "task_name": "Model Toggle",
+      "command": "opencode",
+      "args": ["run", "/m"]
+    }],
+    "cmd+shift+1": ["task::Spawn", {
+      "task_name": "Model 1",
+      "command": "opencode",
+      "args": ["run", "/model-toggle set 1"]
+    }],
+    "cmd+shift+2": ["task::Spawn", {
+      "task_name": "Model 2",
+      "command": "opencode",
+      "args": ["run", "/model-toggle set 2"]
+    }],
+    "cmd+shift+3": ["task::Spawn", {
+      "task_name": "Model 3",
+      "command": "opencode",
+      "args": ["run", "/model-toggle set 3"]
+    }]
+  }
+}
